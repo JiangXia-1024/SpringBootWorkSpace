@@ -1,6 +1,7 @@
 package com.springboot.springbootdemo.service;
 
 import com.springboot.springbootdemo.bean.User;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
