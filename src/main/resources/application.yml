@@ -1,0 +1,56 @@
+my:
+  uuid: ${random.uuid}
+  name: jiangxia
+  age: 29
+  email: ${random.email}
+  greeting: hi,i'm  ${my.name}
+
+server:
+  servlet:
+    context-path: /share
+spring:
+  application:
+    name: share
+  datasource:
+    url: jdbc:mysql://localhost:3306/jdbc?useUnicode=true&characterEncoding=utf8&autoReconnect=true&failOverReadOnly=false
+    username: root
+    password: jiang
+    driver-class-name: com.mysql.jdbc.Driver
+    ## sql server
+    #url: jdbc:sqlserver://10.100.2.60:1420;DatabaseName=ResumeCenter
+    #driver-class:  com.microsoft.sqlserver.jdbc.SQLServerDriver
+  #redis配置
+  redis:
+    #redis数据库索引（默认为0）
+    database: 0
+    #redis服务器地址
+    host: 10.100.50.229
+    #redis链接端口
+    post: 8080
+    #Redis服务器连接密码（默认为空）
+    password:
+    pool:
+    # 连接池最大连接数（使用负值表示没有限制）
+      max-active: 200
+    # 连接池最大阻塞等待时间（使用负值表示没有限制）
+      max-wait: -1
+    # 连接池中的最大空闲连接
+      max-idle: 10
+    # 连接池中的最小空闲连接
+      min-idle: 0
+    # 连接超时时间毫秒
+    timeout: 1000
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.jiang.springbootdemo02.bean
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+### Mybatis 配置
+## 配置为 com.pancm.bean 指向实体类包路径。
+#mybatis:
+#  typeAliasesPackage:com.jiang.springbootdemo02.bean
+#  # 配置为 classpath 路径下 mapper 包下，* 代表会扫描所有 xml 文件。
+##  mapperLocations:classpath\:mapper/*.xml
+##log
+##logging.config=classpath\:Logback.xml
+##logging.level.root=info
