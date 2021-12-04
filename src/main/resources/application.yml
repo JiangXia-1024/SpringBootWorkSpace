@@ -6,16 +6,17 @@ my:
   greeting: hi,i'm  ${my.name}
 
 server:
+  port: 8081
   servlet:
     context-path: /share
 spring:
   application:
     name: share
   datasource:
-    url: jdbc:mysql://localhost:3306/jdbc?useUnicode=true&characterEncoding=utf8&autoReconnect=true&failOverReadOnly=false
+    url: jdbc:mysql://localhost:3306/test?serverTimezone=Asia/Chongqing&useUnicode=true&characterEncoding=utf8&characterSetResults=utf8&useSSL=false&verifyServerCertificate=false&autoReconnct=true&autoReconnectForPools=true&allowMultiQueries=true
     username: root
     password: jiang
-    driver-class-name: com.mysql.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
     ## sql server
     #url: jdbc:sqlserver://10.100.2.60:1420;DatabaseName=ResumeCenter
     #driver-class:  com.microsoft.sqlserver.jdbc.SQLServerDriver
@@ -24,9 +25,9 @@ spring:
     #redis数据库索引（默认为0）
     database: 0
     #redis服务器地址
-    host: 10.100.50.229
+    host: 127.0.0.1
     #redis链接端口
-    post: 8080
+    post: 6379
     #Redis服务器连接密码（默认为空）
     password:
     pool:
@@ -42,7 +43,7 @@ spring:
     timeout: 1000
 mybatis:
   mapper-locations: classpath:mapper/*.xml
-  type-aliases-package: com.jiang.springbootdemo02.bean
+  type-aliases-package: com.spring.springbootdemo.bean
 #  configuration:
 #    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 ### Mybatis 配置
@@ -52,5 +53,8 @@ mybatis:
 #  # 配置为 classpath 路径下 mapper 包下，* 代表会扫描所有 xml 文件。
 ##  mapperLocations:classpath\:mapper/*.xml
 ##log
-##logging.config=classpath\:Logback.xml
-##logging.level.root=info
+logging:
+  config: /IdeaProjectSpace/springbootdemo02/src/main/resources/locbak.xml
+  level:
+    root: info
+    com.springboot.springbootdemo.controller: trace
