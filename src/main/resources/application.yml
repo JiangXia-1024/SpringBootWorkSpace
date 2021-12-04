@@ -54,7 +54,7 @@ mybatis:
 ##  mapperLocations:classpath\:mapper/*.xml
 ##log
 logging:
-  config: /IdeaProjectSpace/springbootdemo02/src/main/resources/locbak.xml
+  config: /workspace/java/SpringBootWorkSpace/src/main/resources/locbak.xml
   level:
     root: info
     com.springboot.springbootdemo.controller: trace
