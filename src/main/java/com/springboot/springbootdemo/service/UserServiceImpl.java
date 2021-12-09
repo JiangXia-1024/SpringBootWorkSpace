@@ -1,7 +1,7 @@
 package com.springboot.springbootdemo.service;
 
 import com.springboot.springbootdemo.bean.User;
-import com.springboot.springbootdemo.dao.UserDao;
+import com.springboot.springbootdemo.dao.db1.UserDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
