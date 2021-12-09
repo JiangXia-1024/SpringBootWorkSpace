@@ -1,4 +1,4 @@
-package com.springboot.springbootdemo.redisconfig;
+package com.springboot.springbootdemo.config.redisconfig;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.PropertyAccessor;

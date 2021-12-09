@@ -1,4 +1,4 @@
-package com.springboot.springbootdemo.redisconfig;
+package com.springboot.springbootdemo.config.redisconfig;
 
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.context.annotation.Bean;
