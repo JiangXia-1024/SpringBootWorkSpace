@@ -13,18 +13,10 @@ spring:
   application:
     name: share
   datasource:
-    dynamic:
-      primary: db1 # 配置默认数据库
-    db1:
-      jdbc-url: jdbc:mysql://localhost:3306/test?serverTimezone=Asia/Chongqing&useUnicode=true&characterEncoding=utf8&characterSetResults=utf8&useSSL=false&verifyServerCertificate=false&autoReconnct=true&autoReconnectForPools=true&allowMultiQueries=true
-      username: root
-      password: jiang
-      driver-class-name: com.mysql.cj.jdbc.Driver
-    db2:
-      jdbc-url: jdbc:mysql://localhost:3306/spring_cache?serverTimezone=Asia/Chongqing&useUnicode=true&characterEncoding=utf8&characterSetResults=utf8&useSSL=false&verifyServerCertificate=false&autoReconnct=true&autoReconnectForPools=true&allowMultiQueries=true
-      username: root
-      password: jiang
-      driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test?serverTimezone=Asia/Chongqing&useUnicode=true&characterEncoding=utf8&characterSetResults=utf8&useSSL=false&verifyServerCertificate=false&autoReconnct=true&autoReconnectForPools=true&allowMultiQueries=true
+    username: root
+    password: jiang
+    driver-class-name: com.mysql.cj.jdbc.Driver
     ## sql server
     #url: jdbc:sqlserver://10.100.2.60:1420;DatabaseName=ResumeCenter
     #driver-class:  com.microsoft.sqlserver.jdbc.SQLServerDriver

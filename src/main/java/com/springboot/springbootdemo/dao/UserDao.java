@@ -1,4 +1,4 @@
-package com.springboot.springbootdemo.dao.db1;
+package com.springboot.springbootdemo.dao;
 
 import com.springboot.springbootdemo.bean.User;
 import org.apache.ibatis.annotations.*;
