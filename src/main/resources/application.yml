@@ -50,6 +50,9 @@ spring:
     # 连接超时时间毫秒
     timeout: 1000
 mybatis:
+  configuration:
+    #开启驼峰命名匹配规则
+    map-underscore-to-camel-case: true
   mapper-locations: classpath:mapper/*.xml
   type-aliases-package: com.spring.springbootdemo.bean
 #  configuration:
@@ -66,3 +69,5 @@ logging:
   level:
     root: info
     com.springboot.springbootdemo.controller: trace
+    com.springboot.springbootdemo.service: debug
+    com.springboot.springbootdemo.dao: debug

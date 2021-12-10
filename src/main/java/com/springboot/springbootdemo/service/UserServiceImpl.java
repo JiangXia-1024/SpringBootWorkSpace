@@ -3,11 +3,16 @@ package com.springboot.springbootdemo.service;
 import com.springboot.springbootdemo.bean.User;
 import com.springboot.springbootdemo.dao.db1.UserDao;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheConfig;
+import org.springframework.cache.annotation.CachePut;
+import org.springframework.cache.annotation.Cacheable;
+import org.springframework.cache.annotation.Caching;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
+@CacheConfig(cacheNames = "user")
 public class UserServiceImpl implements UserService {
     @Autowired
     private UserDao userDao;
@@ -49,10 +54,20 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+//    @Cacheable(cacheNames = "user")
+//    @Caching(
+//            cacheable = {
+//                    @Cacheable(value = "user", key = "#userName")
+//            },
+//            put = {
+//                    @CachePut(value = "user", key = "#result.id"),
+//                    @CachePut(value = "user", key = "#result.email")
+//            }
+//    )
     public User findUserByName(String userName) {
+        System.out.println("查询的是："+userName);
         return userDao.findByName(userName);
     }
-
 
     @Override
     public List<User> findAll() {

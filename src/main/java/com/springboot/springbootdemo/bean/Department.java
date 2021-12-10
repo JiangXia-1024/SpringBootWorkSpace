@@ -1,10 +1,12 @@
 package com.springboot.springbootdemo.bean;
 
+import java.io.Serializable;
+
 /**
  * @author jiangxia
  * @date 2021年12月09日 11:36
  */
-public class Department {
+public class Department implements Serializable {
     public Integer id;
     public String departmentName;
 

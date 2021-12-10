@@ -3,10 +3,8 @@ package com.springboot.springbootdemo.controller;
 import com.springboot.springbootdemo.bean.Department;
 import com.springboot.springbootdemo.service.DepartmentService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.data.repository.cdi.Eager;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * @author jiangxia
@@ -22,5 +20,19 @@ public class DepartmentController {
     @RequestMapping(value = "/dep", method = RequestMethod.GET)
     public Department department(@RequestParam(value = "id",required = true) int id){
         return departmentService.findByID(id);
+    }
+
+    @GetMapping("/depupdate")
+    public Department updateDepartment(Department department){
+        Department department1 = departmentService.updateDepartment(department);
+        return  department1;
+    }
+
+    @RequestMapping(value = "/deldep", method = RequestMethod.DELETE)
+    public String delDepartment(@RequestParam(value = "id",required = true) int id){
+        if(departmentService.delDep(id)){
+            return "success";
+        }
+        return "fail";
     }
 }

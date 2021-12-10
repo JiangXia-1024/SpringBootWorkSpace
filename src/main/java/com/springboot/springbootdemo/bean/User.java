@@ -1,6 +1,8 @@
 package com.springboot.springbootdemo.bean;
 
-public class User {
+import java.io.Serializable;
+
+public class User implements Serializable {
 
     private long id;
     private String email;
