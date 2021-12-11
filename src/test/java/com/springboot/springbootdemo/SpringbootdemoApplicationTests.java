@@ -26,6 +26,24 @@ class SpringbootdemoApplicationTests {
     }
 
     //测试redis如何保存对象
+    /**
+     *
+     * @author jiangxia
+     * @date 2021/12/11 11:22
+     * @param No such property: code for class: Script1
+     * @return No such property: code for class: Script1
+     * @description redis原理：
+     * cachemanager===cache缓存组件来实际给缓存中存取数据
+     * 引入redis的starter后，容器中保存了rediscachemanager；rediscachemanager创建了rediscache缓存来作为缓存组件
+     * rediscache通过操作redis来缓存数据
+     * 默认保存数据 k-v都是obj对象，利用序列化保存
+     * 保存为jason：
+     * 1、引入redis的starter后，cachemanager变为rediscachemannager
+     * 2、默认创建的rediscachemannager操作redis的时候使用的是redistemlate<obj><obj>
+     * 3、redistemplate<obj><obj>是默认使用jdk的序列化机制
+     * 自定义cachemanager
+     *
+     */
     @Test
     public void test01(){
         User user = userService.findUserByName("李青");
