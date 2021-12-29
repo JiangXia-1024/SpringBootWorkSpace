@@ -49,5 +49,5 @@ public class RedisConfig {
         template.setDefaultSerializer(serializer);//设置默认的序列化器为Json序列化器
         return template;
     }
-    
+
 }

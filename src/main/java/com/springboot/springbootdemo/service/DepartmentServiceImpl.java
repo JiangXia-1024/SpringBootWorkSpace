@@ -3,6 +3,8 @@ package com.springboot.springbootdemo.service;
 import com.springboot.springbootdemo.bean.Department;
 import com.springboot.springbootdemo.dao.db2.DepartmentDao;
 import org.hibernate.annotations.Cache;
+import org.springframework.amqp.core.Message;
+import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.CachePut;
@@ -76,7 +78,7 @@ public class DepartmentServiceImpl implements DepartmentService {
      *
      * @author jiangxia
      * @date 2021/12/9 20:57
-     * @param No such property: code for class: Script1
+     * @param ：No such property: code for class: Script1
      * @return No such property: code for class: Script1
      * @description@CachePut:表示即调用方法，又更新缓存数据，同步更新缓存（需要key保持一直）
      * 1、运行时机：先调用目标方法
@@ -97,7 +99,7 @@ public class DepartmentServiceImpl implements DepartmentService {
      * 
      * @author jiangxia
      * @date 2021/12/9 21:24
-     * @param No such property: code for class: Script1 
+     * @param ：No such property: code for class: Script1
      * @return No such property: code for class: Script1
      * @description @CacheEvict:缓存清除
      * 通过key指定需要清除缓存中的数据
@@ -115,5 +117,16 @@ public class DepartmentServiceImpl implements DepartmentService {
             e.printStackTrace();
         }
         return flag;
+    }
+
+    @RabbitListener(queues = "jiang.news")
+    public void receive(Department department){
+        System.out.println("收到消息："+department);
+    }
+
+    @RabbitListener(queues = "jiang")
+    public void receiveMessage(Message message){
+        System.out.println(message.getBody());
+        System.out.println(message.getMessageProperties());
     }
 }

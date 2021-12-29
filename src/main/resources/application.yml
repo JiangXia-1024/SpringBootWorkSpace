@@ -5,6 +5,42 @@ my:
   email: ${random.email}
   greeting: hi,i'm  ${my.name}
 
+person:
+  #  单引号会将\n作为字符串输出，双引号会将\n换行输出：所以双引号不会进行转义，而单引号会转义，因为\n本来就是转义换行的意思
+  #  -n表示N大写，等同于userName
+  user-name: 张三
+  boss: true
+  #  默认时间格式是/
+  birth: 2020/12/29
+  age: 18
+  phone:
+    band: 华为
+    price: 6000.00
+  #  interests: [篮球,足球]等同于下面格式
+  #    -代表一个元素
+  interests:
+    - 篮球
+    - 足球
+    - 18
+    - 175158455
+  animal: [猫,狗]
+  #  score: {english:80,math:90}
+  score:
+    english: 80
+    math: 90
+  salarys:
+    - 9999.98
+    - 9999.99
+  allPhones:
+    china:
+      - {band: 华为,price: 6000.00}
+      - band: 小米
+        price: 5000.98
+      - band: oppo
+        price: 4000.36
+    America: [{band: Iphone,price: 7000.23},{band: nokia,price: 4002.36}]
+
+
 server:
   port: 8081
   servlet:
@@ -52,6 +88,15 @@ spring:
       min-idle: 0
     # 连接超时时间毫秒
     timeout: 1000
+#  rabbitmq配置
+  rabbitmq:
+#    host: 192.168.42.100  docker
+    host: localhost  # 本地
+    username: guest
+    password: guest
+#    端口不写默认就是5672
+#    port: 5672
+
 mybatis:
   configuration:
     #开启驼峰命名匹配规则
