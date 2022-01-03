@@ -48,6 +48,12 @@ server:
 spring:
   application:
     name: share
+  servlet:
+    multipart:
+#      单个文件最大限制 类型是datasize，单位kb
+      max-file-size: 1024
+#      单次请求最大限制
+      max-request-size: 2048
   datasource:
     dynamic:
       primary: db1 # 配置默认数据库
