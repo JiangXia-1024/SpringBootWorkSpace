@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>atguigu，欢迎您</h1>
+测试REST风格；
+<form action="/user" method="get">
+    <input value="REST-GET 提交" type="submit"/>
+</form>
+<form action="/user" method="post">
+    <input value="REST-POST 提交" type="submit"/>
+</form>
+<form action="/user" method="post">
+    <input name="_method" type="hidden" value="delete"/>
+    <input name="_m" type="hidden" value="delete"/>
+    <input value="REST-DELETE 提交" type="submit"/>
+</form>
+<form action="/user" method="post">
+    <input name="_method" type="hidden" value="PUT"/>
+    <input value="REST-PUT 提交" type="submit"/>
+</form>
+<hr/>
+测试基本注解：
+<ul>
+    <a href="/car/1/user/李四/band/比亚迪">car/{id}/user/{name}/band/{band}</a>
+    <li>@PathVariable（路径变量）</li>
+    <li>@RequestHeader（获取请求头）</li>
+    <li>@RequestParam（获取请求参数）</li>
+    <li>@CookieValue（获取cookie值）</li>
+    <li>@RequestBody（获取请求体[POST]）</li>
+
+    <li>@RequestAttribute（获取request域属性）</li>
+    <li>@MatrixVariable（矩阵变量）</li>
+</ul>
+
+/cars/{path}?xxx=xxx&aaa=ccc queryString 查询字符串。@RequestParam；<br/>
+/cars/sell;low=34;brand=byd,audi,yd  ；矩阵变量 <br/>
+页面开发，cookie禁用了，session里面的内容怎么使用；
+session.set(a,b)---> jsessionid ---> cookie ----> 每次发请求携带。
+url重写：/abc;jsesssionid=xxxx 把cookie的值使用矩阵变量的方式进行传递.
+
+/boss/1/2
+
+/boss/1;age=20/2;age=20
+
+<a href="/cars/sell;low=34;brand=byd,audi,yd">@MatrixVariable（矩阵变量）</a>
+<a href="/cars/sell;low=34;brand=byd;brand=audi;brand=yd">@MatrixVariable（矩阵变量）</a>
+<a href="/boss/1;age=20/2;age=10">@MatrixVariable（矩阵变量）/boss/{bossId}/{empId}</a>
+<br/>
+<form action="/save" method="post">
+    测试@RequestBody获取数据 <br/>
+    用户名：<input name="userName"/> <br>
+    邮箱：<input name="email"/>
+    <input type="submit" value="提交"/>
+</form>
+<ol>
+    <li>矩阵变量需要在SpringBoot中手动开启</li>
+    <li>根据RFC3986的规范，矩阵变量应当绑定在路径变量中！</li>
+    <li>若是有多个矩阵变量，应当使用英文符号;进行分隔。</li>
+    <li>若是一个矩阵变量有多个值，应当使用英文符号,进行分隔，或之命名多个重复的key即可。</li>
+    <li>如：/cars/sell;low=34;brand=byd,audi,yd</li>
+</ol>
+<hr/>
+测试原生API：
+<a href="/testapi">测试原生API</a>
+<hr/>
+测试复杂类型：<hr/>
+测试封装POJO；
+<form action="/saveuser" method="post">
+    姓名： <input name="userName" value="zhangsan"/> <br/>
+    年龄： <input name="age" value="18"/> <br/>
+    生日： <input name="birth" value="2019/12/10"/> <br/>
+    <!--    宠物姓名：<input name="pet.name" value="阿猫"/><br/>-->
+    <!--    宠物年龄：<input name="pet.age" value="5"/>-->
+    宠物： <input name="pet" value="啊猫,3"/>
+    <input type="submit" value="保存"/>
+</form>
+
+<br>
+</body>
+</html>

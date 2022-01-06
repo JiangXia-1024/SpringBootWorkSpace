@@ -13,6 +13,7 @@ public class YamlDean {
     private int age;
     private String email;
     private String greeting;
+    private PropertiesBean propertiesBean;
 
 
     public String getUuid() {
@@ -53,5 +54,25 @@ public class YamlDean {
 
     public void setGreeting(String greeting) {
         this.greeting = greeting;
+    }
+
+    public PropertiesBean getPropertiesBean() {
+        return propertiesBean;
+    }
+
+    public void setPropertiesBean(PropertiesBean propertiesBean) {
+        this.propertiesBean = propertiesBean;
+    }
+
+    public YamlDean() {
+    }
+
+    public YamlDean(String uuid, String name, int age, String email, String greeting, PropertiesBean propertiesBean) {
+        this.uuid = uuid;
+        this.name = name;
+        this.age = age;
+        this.email = email;
+        this.greeting = greeting;
+        this.propertiesBean = propertiesBean;
     }
 }

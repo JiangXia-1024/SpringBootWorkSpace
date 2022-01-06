@@ -26,4 +26,12 @@ public class PropertiesBean {
     public void setAge(int age) {
         this.age = age;
     }
+
+    public PropertiesBean() {
+    }
+
+    public PropertiesBean(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
 }

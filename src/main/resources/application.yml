@@ -5,6 +5,9 @@ my:
   email: ${random.email}
   greeting: hi,i'm  ${my.name}
 
+mycar:
+  band: BYD
+  price: 100000
 person:
   #  单引号会将\n作为字符串输出，双引号会将\n换行输出：所以双引号不会进行转义，而单引号会转义，因为\n本来就是转义换行的意思
   #  -n表示N大写，等同于userName
@@ -39,7 +42,6 @@ person:
       - band: oppo
         price: 4000.36
     America: [{band: Iphone,price: 7000.23},{band: nokia,price: 4002.36}]
-
 
 server:
   port: 8081
@@ -102,7 +104,14 @@ spring:
     password: guest
 #    端口不写默认就是5672
 #    port: 5672
-
+  #  邮箱配置
+  mail:
+    #    邮箱账号
+    username: 1152095329@qq.com
+    #    邮箱密码，可以是授权码
+    password: jyt19930905
+    #    邮箱服务器地址
+    host: smtp.qq.com
 mybatis:
   configuration:
     #开启驼峰命名匹配规则
@@ -119,9 +128,13 @@ mybatis:
 ##  mapperLocations:classpath\:mapper/*.xml
 ##log
 logging:
+#  logging.config是用来指定项目启动的时候，读取哪个配置文件，这里指定的是日志配置文件，即子module项目根路径下的 logback.xml文件，该文件是日志的主要配置信息。
   config: /workspace/java/SpringBootWorkSpace/src/main/resources/locbak.xml
   level:
     root: info
     com.springboot.springbootdemo.controller: trace
     com.springboot.springbootdemo.service: debug
     com.springboot.springbootdemo.dao: debug
+  file:
+    max-size: 10MB
+    max-history: 7
