@@ -56,6 +56,9 @@ spring:
       max-file-size: 1024
 #      单次请求最大限制
       max-request-size: 2048
+#解决The bean 'esBeanDao', defined in com.springboot.springbootdemo.dao.es.EsBeanDao defined in @EnableElasticsearchRepositories declared on ElasticsearchRepositoriesRegistrar.EnableElasticsearchRepositoriesConfiguration, could not be registered. A bean with that name has already been defined in file [F:\workspace\java\SpringBootWorkSpace\target\classes\com\springboot\springbootdemo\dao\es\EsBeanDao.class] and overriding is disabled.
+  main:
+    allow-bean-definition-overriding: true
   datasource:
     dynamic:
       primary: db1 # 配置默认数据库

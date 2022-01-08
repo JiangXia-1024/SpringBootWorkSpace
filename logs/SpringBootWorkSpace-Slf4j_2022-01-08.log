@@ -1,0 +1,102 @@
+2022-01-08 10:10:59.294 [restartedMain] INFO  c.s.springbootdemo.SpringbootdemoApplication - Starting SpringbootdemoApplication on Jiang with PID 5488 (F:\workspace\java\SpringBootWorkSpace\target\classes started by Administrator in F:\workspace\java\SpringBootWorkSpace)
+2022-01-08 10:10:59.295 [restartedMain] INFO  c.s.springbootdemo.SpringbootdemoApplication - No active profile set, falling back to default profiles: default
+2022-01-08 10:10:59.347 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-01-08 10:10:59.348 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-01-08 10:10:59.942 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userDao' and 'com.springboot.springbootdemo.dao.db1.UserDao' mapperInterface. Bean already defined with the same name!
+2022-01-08 10:10:59.942 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'departmentDao' and 'com.springboot.springbootdemo.dao.db2.DepartmentDao' mapperInterface. Bean already defined with the same name!
+2022-01-08 10:11:00.120 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-08 10:11:00.122 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-01-08 10:11:00.194 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'esBeanDao' defined in com.springboot.springbootdemo.dao.es.EsBeanDao defined in @EnableElasticsearchRepositories declared on ElasticsearchRepositoriesRegistrar.EnableElasticsearchRepositoriesConfiguration: Cannot register bean definition [Root bean: class [org.springframework.data.elasticsearch.repository.support.ElasticsearchRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in com.springboot.springbootdemo.dao.es.EsBeanDao defined in @EnableElasticsearchRepositories declared on ElasticsearchRepositoriesRegistrar.EnableElasticsearchRepositoriesConfiguration] for bean 'esBeanDao': There is already [Generic bean: class [org.mybatis.spring.mapper.MapperFactoryBean]; scope=singleton; abstract=false; lazyInit=null; autowireMode=2; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [F:\workspace\java\SpringBootWorkSpace\target\classes\com\springboot\springbootdemo\dao\es\EsBeanDao.class]] bound.
+2022-01-08 10:11:00.204 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-01-08 10:11:00.207 [restartedMain] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'esBeanDao', defined in com.springboot.springbootdemo.dao.es.EsBeanDao defined in @EnableElasticsearchRepositories declared on ElasticsearchRepositoriesRegistrar.EnableElasticsearchRepositoriesConfiguration, could not be registered. A bean with that name has already been defined in file [F:\workspace\java\SpringBootWorkSpace\target\classes\com\springboot\springbootdemo\dao\es\EsBeanDao.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2022-01-08 10:12:03.261 [restartedMain] INFO  c.s.springbootdemo.SpringbootdemoApplication - Starting SpringbootdemoApplication on Jiang with PID 11932 (F:\workspace\java\SpringBootWorkSpace\target\classes started by Administrator in F:\workspace\java\SpringBootWorkSpace)
+2022-01-08 10:12:03.262 [restartedMain] INFO  c.s.springbootdemo.SpringbootdemoApplication - No active profile set, falling back to default profiles: default
+2022-01-08 10:12:03.313 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-01-08 10:12:03.313 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-01-08 10:12:03.910 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userDao' and 'com.springboot.springbootdemo.dao.db1.UserDao' mapperInterface. Bean already defined with the same name!
+2022-01-08 10:12:03.911 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'departmentDao' and 'com.springboot.springbootdemo.dao.db2.DepartmentDao' mapperInterface. Bean already defined with the same name!
+2022-01-08 10:12:04.085 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-08 10:12:04.087 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-01-08 10:12:04.157 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'esBeanDao' defined in com.springboot.springbootdemo.dao.es.EsBeanDao defined in @EnableElasticsearchRepositories declared on ElasticsearchRepositoriesRegistrar.EnableElasticsearchRepositoriesConfiguration: Cannot register bean definition [Root bean: class [org.springframework.data.elasticsearch.repository.support.ElasticsearchRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in com.springboot.springbootdemo.dao.es.EsBeanDao defined in @EnableElasticsearchRepositories declared on ElasticsearchRepositoriesRegistrar.EnableElasticsearchRepositoriesConfiguration] for bean 'esBeanDao': There is already [Generic bean: class [org.mybatis.spring.mapper.MapperFactoryBean]; scope=singleton; abstract=false; lazyInit=null; autowireMode=2; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [F:\workspace\java\SpringBootWorkSpace\target\classes\com\springboot\springbootdemo\dao\es\EsBeanDao.class]] bound.
+2022-01-08 10:12:04.167 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-01-08 10:12:04.170 [restartedMain] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'esBeanDao', defined in com.springboot.springbootdemo.dao.es.EsBeanDao defined in @EnableElasticsearchRepositories declared on ElasticsearchRepositoriesRegistrar.EnableElasticsearchRepositoriesConfiguration, could not be registered. A bean with that name has already been defined in file [F:\workspace\java\SpringBootWorkSpace\target\classes\com\springboot\springbootdemo\dao\es\EsBeanDao.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2022-01-08 10:14:28.791 [restartedMain] INFO  c.s.springbootdemo.SpringbootdemoApplication - Starting SpringbootdemoApplication on Jiang with PID 2040 (F:\workspace\java\SpringBootWorkSpace\target\classes started by Administrator in F:\workspace\java\SpringBootWorkSpace)
+2022-01-08 10:14:28.792 [restartedMain] INFO  c.s.springbootdemo.SpringbootdemoApplication - No active profile set, falling back to default profiles: default
+2022-01-08 10:14:28.846 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-01-08 10:14:28.846 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-01-08 10:14:29.473 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userDao' and 'com.springboot.springbootdemo.dao.db1.UserDao' mapperInterface. Bean already defined with the same name!
+2022-01-08 10:14:29.473 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'departmentDao' and 'com.springboot.springbootdemo.dao.db2.DepartmentDao' mapperInterface. Bean already defined with the same name!
+2022-01-08 10:14:29.655 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-08 10:14:29.657 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-01-08 10:14:29.729 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 67ms. Found 1 Elasticsearch repository interfaces.
+2022-01-08 10:14:29.734 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-08 10:14:29.735 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2022-01-08 10:14:29.743 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8ms. Found 0 Reactive Elasticsearch repository interfaces.
+2022-01-08 10:14:29.754 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-08 10:14:29.754 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2022-01-08 10:14:29.771 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.springboot.springbootdemo.dao.es.EsBeanDao. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2022-01-08 10:14:29.772 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13ms. Found 0 JPA repository interfaces.
+2022-01-08 10:14:29.791 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-08 10:14:29.792 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-01-08 10:14:29.812 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.springboot.springbootdemo.dao.es.EsBeanDao. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2022-01-08 10:14:29.812 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7ms. Found 0 Redis repository interfaces.
+2022-01-08 10:14:30.718 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2022-01-08 10:14:30.730 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2022-01-08 10:14:30.730 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-01-08 10:14:30.731 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2022-01-08 10:14:30.850 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/share] - Initializing Spring embedded WebApplicationContext
+2022-01-08 10:14:30.851 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2005 ms
+2022-01-08 10:14:32.291 [restartedMain] WARN  org.springframework.data.convert.CustomConversions - Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-01-08 10:14:32.291 [restartedMain] WARN  org.springframework.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-01-08 10:14:32.291 [restartedMain] WARN  org.springframework.data.convert.CustomConversions - Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-01-08 10:14:32.291 [restartedMain] WARN  org.springframework.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-01-08 10:14:33.392 [restartedMain] INFO  o.s.data.elasticsearch.support.VersionInfo - Version Spring Data Elasticsearch: 4.0.2.RELEASE
+2022-01-08 10:14:33.392 [restartedMain] INFO  o.s.data.elasticsearch.support.VersionInfo - Version Elasticsearch Client in build: 7.6.2
+2022-01-08 10:14:33.392 [restartedMain] INFO  o.s.data.elasticsearch.support.VersionInfo - Version Elasticsearch Client used: 7.6.2
+2022-01-08 10:14:33.499 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2022-01-08 10:14:34.530 [restartedMain] WARN  o.s.d.e.r.support.AbstractElasticsearchRepository - Cannot create index: Timeout connecting to [localhost/127.0.0.1:9200]; nested exception is java.lang.RuntimeException: Timeout connecting to [localhost/127.0.0.1:9200]
+2022-01-08 10:14:34.925 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-01-08 10:14:35.020 [restartedMain] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2022-01-08 10:14:35.109 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-01-08 10:14:35.743 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2022-01-08 10:14:35.758 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path '/share'
+2022-01-08 10:14:35.759 [restartedMain] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2022-01-08 10:14:35.794 [restartedMain] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#5d591465:0/SimpleConnection@470b912e [delegate=amqp://guest@127.0.0.1:5672/, localPort= 61904]
+2022-01-08 10:14:47.847 [restartedMain] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Broker not available; cannot force queue declarations during start: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: JPA metamodel must not be empty!
+2022-01-08 10:14:47.890 [restartedMain] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
+2022-01-08 10:14:47.890 [restartedMain] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
+2022-01-08 10:14:47.900 [restartedMain] INFO  c.s.springbootdemo.SpringbootdemoApplication - Started SpringbootdemoApplication in 19.67 seconds (JVM running for 20.547)
+2022-01-08 10:14:47.902 [restartedMain] INFO  c.s.springbootdemo.SpringbootdemoApplication - ===============启动成功了===============
+2022-01-08 10:14:59.592 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/share] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-08 10:14:59.592 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-01-08 10:14:59.604 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 12 ms
