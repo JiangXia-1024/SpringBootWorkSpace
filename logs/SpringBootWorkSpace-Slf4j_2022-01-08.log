@@ -100,3 +100,682 @@ Consider renaming one of the beans or enabling overriding by setting spring.main
 2022-01-08 10:14:59.592 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/share] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2022-01-08 10:14:59.592 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 2022-01-08 10:14:59.604 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 12 ms
+2022-01-08 13:04:06.295 [main] INFO  c.s.springbootdemo.SpringbootdemoApplicationTests - Starting SpringbootdemoApplicationTests on Jiang with PID 12072 (started by Administrator in F:\workspace\java\SpringBootWorkSpace)
+2022-01-08 13:04:06.296 [main] INFO  c.s.springbootdemo.SpringbootdemoApplicationTests - No active profile set, falling back to default profiles: default
+2022-01-08 13:04:06.960 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userDao' and 'com.springboot.springbootdemo.dao.db1.UserDao' mapperInterface. Bean already defined with the same name!
+2022-01-08 13:04:06.960 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'departmentDao' and 'com.springboot.springbootdemo.dao.db2.DepartmentDao' mapperInterface. Bean already defined with the same name!
+2022-01-08 13:04:07.245 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-08 13:04:07.248 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-01-08 13:04:07.527 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 272ms. Found 1 Elasticsearch repository interfaces.
+2022-01-08 13:04:07.533 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-08 13:04:07.533 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2022-01-08 13:04:07.543 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9ms. Found 0 Reactive Elasticsearch repository interfaces.
+2022-01-08 13:04:07.554 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-08 13:04:07.555 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2022-01-08 13:04:07.572 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.springboot.springbootdemo.dao.es.EsBeanDao. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2022-01-08 13:04:07.574 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15ms. Found 0 JPA repository interfaces.
+2022-01-08 13:04:07.594 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-08 13:04:07.595 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-01-08 13:04:07.613 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.springboot.springbootdemo.dao.es.EsBeanDao. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2022-01-08 13:04:07.613 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9ms. Found 0 Redis repository interfaces.
+2022-01-08 13:04:10.560 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-01-08 13:04:10.560 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-01-08 13:04:10.561 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-01-08 13:04:10.561 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-01-08 13:04:11.745 [main] INFO  o.s.data.elasticsearch.support.VersionInfo - Version Spring Data Elasticsearch: 4.0.2.RELEASE
+2022-01-08 13:04:11.745 [main] INFO  o.s.data.elasticsearch.support.VersionInfo - Version Elasticsearch Client in build: 7.6.2
+2022-01-08 13:04:11.745 [main] INFO  o.s.data.elasticsearch.support.VersionInfo - Version Elasticsearch Client used: 7.6.2
+2022-01-08 13:04:12.947 [main] WARN  o.s.d.e.r.support.AbstractElasticsearchRepository - Cannot create index: Timeout connecting to [localhost/127.0.0.1:9200]; nested exception is java.lang.RuntimeException: Timeout connecting to [localhost/127.0.0.1:9200]
+2022-01-08 13:04:14.042 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-01-08 13:04:14.255 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2022-01-08 13:04:14.547 [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-01-08 13:04:15.731 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2022-01-08 13:04:15.844 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#5c79c5ec:0/SimpleConnection@13662609 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 50846]
+2022-01-08 13:04:27.900 [main] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Broker not available; cannot force queue declarations during start: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: JPA metamodel must not be empty!
+2022-01-08 13:04:27.946 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
+2022-01-08 13:04:27.947 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
+2022-01-08 13:04:27.957 [main] INFO  c.s.springbootdemo.SpringbootdemoApplicationTests - Started SpringbootdemoApplicationTests in 22.192 seconds (JVM running for 23.606)
+2022-01-08 13:04:28.908 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Waiting for workers to finish.
+2022-01-08 13:04:28.953 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+2022-01-08 13:04:28.954 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Waiting for workers to finish.
+2022-01-08 13:04:29.961 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+2022-01-08 13:04:29.975 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-01-08 13:04:29.976 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Shutdown ignored - container is not active already
+2022-01-08 13:04:29.976 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Shutdown ignored - container is not active already
+2022-01-08 13:07:01.090 [main] INFO  c.s.springbootdemo.SpringbootdemoApplicationTests - Starting SpringbootdemoApplicationTests on Jiang with PID 16904 (started by Administrator in F:\workspace\java\SpringBootWorkSpace)
+2022-01-08 13:07:01.092 [main] INFO  c.s.springbootdemo.SpringbootdemoApplicationTests - No active profile set, falling back to default profiles: default
+2022-01-08 13:07:01.730 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userDao' and 'com.springboot.springbootdemo.dao.db1.UserDao' mapperInterface. Bean already defined with the same name!
+2022-01-08 13:07:01.730 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'departmentDao' and 'com.springboot.springbootdemo.dao.db2.DepartmentDao' mapperInterface. Bean already defined with the same name!
+2022-01-08 13:07:01.971 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-08 13:07:01.974 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-01-08 13:07:02.194 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 214ms. Found 1 Elasticsearch repository interfaces.
+2022-01-08 13:07:02.202 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-08 13:07:02.203 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2022-01-08 13:07:02.213 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9ms. Found 0 Reactive Elasticsearch repository interfaces.
+2022-01-08 13:07:02.223 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-08 13:07:02.224 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2022-01-08 13:07:02.241 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.springboot.springbootdemo.dao.es.EsBeanDao. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2022-01-08 13:07:02.243 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13ms. Found 0 JPA repository interfaces.
+2022-01-08 13:07:02.264 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-08 13:07:02.266 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-01-08 13:07:02.284 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.springboot.springbootdemo.dao.es.EsBeanDao. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2022-01-08 13:07:02.284 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8ms. Found 0 Redis repository interfaces.
+2022-01-08 13:07:05.157 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-01-08 13:07:05.158 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-01-08 13:07:05.159 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-01-08 13:07:05.159 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-01-08 13:07:06.306 [main] INFO  o.s.data.elasticsearch.support.VersionInfo - Version Spring Data Elasticsearch: 4.0.2.RELEASE
+2022-01-08 13:07:06.306 [main] INFO  o.s.data.elasticsearch.support.VersionInfo - Version Elasticsearch Client in build: 7.6.2
+2022-01-08 13:07:06.307 [main] INFO  o.s.data.elasticsearch.support.VersionInfo - Version Elasticsearch Client used: 7.6.2
+2022-01-08 13:07:07.512 [main] WARN  o.s.d.e.r.support.AbstractElasticsearchRepository - Cannot create index: Timeout connecting to [localhost/127.0.0.1:9200]; nested exception is java.lang.RuntimeException: Timeout connecting to [localhost/127.0.0.1:9200]
+2022-01-08 13:07:08.553 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-01-08 13:07:08.775 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2022-01-08 13:07:09.058 [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-01-08 13:07:10.259 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2022-01-08 13:07:10.379 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#5c79c5ec:0/SimpleConnection@13662609 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 51094]
+2022-01-08 13:07:22.440 [main] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Broker not available; cannot force queue declarations during start: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: JPA metamodel must not be empty!
+2022-01-08 13:07:22.486 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
+2022-01-08 13:07:22.486 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
+2022-01-08 13:07:22.499 [main] INFO  c.s.springbootdemo.SpringbootdemoApplicationTests - Started SpringbootdemoApplicationTests in 21.938 seconds (JVM running for 23.315)
+2022-01-08 13:07:23.327 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Waiting for workers to finish.
+2022-01-08 13:07:23.495 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+2022-01-08 13:07:23.496 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Waiting for workers to finish.
+2022-01-08 13:07:24.506 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+2022-01-08 13:07:24.518 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-01-08 13:07:24.518 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Shutdown ignored - container is not active already
+2022-01-08 13:07:24.518 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Shutdown ignored - container is not active already
+2022-01-08 13:14:48.706 [main] INFO  c.s.springbootdemo.SpringbootdemoApplicationTests - Starting SpringbootdemoApplicationTests on Jiang with PID 4796 (started by Administrator in F:\workspace\java\SpringBootWorkSpace)
+2022-01-08 13:14:48.707 [main] INFO  c.s.springbootdemo.SpringbootdemoApplicationTests - No active profile set, falling back to default profiles: default
+2022-01-08 13:14:49.363 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userDao' and 'com.springboot.springbootdemo.dao.db1.UserDao' mapperInterface. Bean already defined with the same name!
+2022-01-08 13:14:49.363 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'departmentDao' and 'com.springboot.springbootdemo.dao.db2.DepartmentDao' mapperInterface. Bean already defined with the same name!
+2022-01-08 13:14:49.586 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-08 13:14:49.588 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-01-08 13:14:49.807 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 213ms. Found 1 Elasticsearch repository interfaces.
+2022-01-08 13:14:49.814 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-08 13:14:49.815 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2022-01-08 13:14:49.825 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9ms. Found 0 Reactive Elasticsearch repository interfaces.
+2022-01-08 13:14:49.835 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-08 13:14:49.836 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2022-01-08 13:14:49.853 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.springboot.springbootdemo.dao.es.EsBeanDao. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2022-01-08 13:14:49.855 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14ms. Found 0 JPA repository interfaces.
+2022-01-08 13:14:49.874 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-08 13:14:49.876 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-01-08 13:14:49.893 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.springboot.springbootdemo.dao.es.EsBeanDao. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2022-01-08 13:14:49.894 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8ms. Found 0 Redis repository interfaces.
+2022-01-08 13:14:52.843 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-01-08 13:14:52.845 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-01-08 13:14:52.845 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-01-08 13:14:52.845 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-01-08 13:14:53.993 [main] INFO  o.s.data.elasticsearch.support.VersionInfo - Version Spring Data Elasticsearch: 4.0.2.RELEASE
+2022-01-08 13:14:53.993 [main] INFO  o.s.data.elasticsearch.support.VersionInfo - Version Elasticsearch Client in build: 7.6.2
+2022-01-08 13:14:53.993 [main] INFO  o.s.data.elasticsearch.support.VersionInfo - Version Elasticsearch Client used: 7.6.2
+2022-01-08 13:14:55.203 [main] WARN  o.s.d.e.r.support.AbstractElasticsearchRepository - Cannot create index: Timeout connecting to [localhost/127.0.0.1:9200]; nested exception is java.lang.RuntimeException: Timeout connecting to [localhost/127.0.0.1:9200]
+2022-01-08 13:14:56.300 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-01-08 13:14:56.478 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2022-01-08 13:14:56.739 [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-01-08 13:14:57.881 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2022-01-08 13:14:57.963 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#5c79c5ec:0/SimpleConnection@13662609 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 59838]
+2022-01-08 13:15:10.032 [main] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Broker not available; cannot force queue declarations during start: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: JPA metamodel must not be empty!
+2022-01-08 13:15:10.080 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
+2022-01-08 13:15:10.080 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
+2022-01-08 13:15:10.089 [main] INFO  c.s.springbootdemo.SpringbootdemoApplicationTests - Started SpringbootdemoApplicationTests in 21.931 seconds (JVM running for 23.268)
+2022-01-08 13:15:10.944 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Waiting for workers to finish.
+2022-01-08 13:15:11.091 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+2022-01-08 13:15:11.092 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Waiting for workers to finish.
+2022-01-08 13:15:12.103 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+2022-01-08 13:15:12.114 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-01-08 13:15:12.115 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Shutdown ignored - container is not active already
+2022-01-08 13:15:12.115 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Shutdown ignored - container is not active already
+2022-01-08 13:17:19.572 [main] INFO  c.s.springbootdemo.SpringbootdemoApplicationTests - Starting SpringbootdemoApplicationTests on Jiang with PID 14444 (started by Administrator in F:\workspace\java\SpringBootWorkSpace)
+2022-01-08 13:17:19.574 [main] INFO  c.s.springbootdemo.SpringbootdemoApplicationTests - No active profile set, falling back to default profiles: default
+2022-01-08 13:17:20.257 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userDao' and 'com.springboot.springbootdemo.dao.db1.UserDao' mapperInterface. Bean already defined with the same name!
+2022-01-08 13:17:20.257 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'departmentDao' and 'com.springboot.springbootdemo.dao.db2.DepartmentDao' mapperInterface. Bean already defined with the same name!
+2022-01-08 13:17:20.481 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-08 13:17:20.483 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-01-08 13:17:20.702 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 212ms. Found 1 Elasticsearch repository interfaces.
+2022-01-08 13:17:20.708 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-08 13:17:20.709 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2022-01-08 13:17:20.719 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9ms. Found 0 Reactive Elasticsearch repository interfaces.
+2022-01-08 13:17:20.729 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-08 13:17:20.730 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2022-01-08 13:17:20.746 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.springboot.springbootdemo.dao.es.EsBeanDao. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2022-01-08 13:17:20.748 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13ms. Found 0 JPA repository interfaces.
+2022-01-08 13:17:20.769 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-08 13:17:20.771 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-01-08 13:17:20.789 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.springboot.springbootdemo.dao.es.EsBeanDao. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2022-01-08 13:17:20.790 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8ms. Found 0 Redis repository interfaces.
+2022-01-08 13:17:23.702 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-01-08 13:17:23.704 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-01-08 13:17:23.705 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-01-08 13:17:23.705 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-01-08 13:17:24.850 [main] INFO  o.s.data.elasticsearch.support.VersionInfo - Version Spring Data Elasticsearch: 4.0.2.RELEASE
+2022-01-08 13:17:24.851 [main] INFO  o.s.data.elasticsearch.support.VersionInfo - Version Elasticsearch Client in build: 7.6.2
+2022-01-08 13:17:24.851 [main] INFO  o.s.data.elasticsearch.support.VersionInfo - Version Elasticsearch Client used: 7.6.2
+2022-01-08 13:17:26.049 [main] WARN  o.s.d.e.r.support.AbstractElasticsearchRepository - Cannot create index: Timeout connecting to [localhost/127.0.0.1:9200]; nested exception is java.lang.RuntimeException: Timeout connecting to [localhost/127.0.0.1:9200]
+2022-01-08 13:17:27.134 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-01-08 13:17:27.344 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2022-01-08 13:17:27.608 [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-01-08 13:17:28.825 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2022-01-08 13:17:28.916 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#5c79c5ec:0/SimpleConnection@13662609 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 60111]
+2022-01-08 13:17:36.371 [main] INFO  c.s.springbootdemo.SpringbootdemoApplicationTests - Starting SpringbootdemoApplicationTests on Jiang with PID 14528 (started by Administrator in F:\workspace\java\SpringBootWorkSpace)
+2022-01-08 13:17:36.372 [main] INFO  c.s.springbootdemo.SpringbootdemoApplicationTests - No active profile set, falling back to default profiles: default
+2022-01-08 13:17:37.027 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userDao' and 'com.springboot.springbootdemo.dao.db1.UserDao' mapperInterface. Bean already defined with the same name!
+2022-01-08 13:17:37.027 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'departmentDao' and 'com.springboot.springbootdemo.dao.db2.DepartmentDao' mapperInterface. Bean already defined with the same name!
+2022-01-08 13:17:37.259 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-08 13:17:37.261 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-01-08 13:17:37.504 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 235ms. Found 1 Elasticsearch repository interfaces.
+2022-01-08 13:17:37.510 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-08 13:17:37.510 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2022-01-08 13:17:37.520 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9ms. Found 0 Reactive Elasticsearch repository interfaces.
+2022-01-08 13:17:37.531 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-08 13:17:37.533 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2022-01-08 13:17:37.548 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.springboot.springbootdemo.dao.es.EsBeanDao. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2022-01-08 13:17:37.551 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13ms. Found 0 JPA repository interfaces.
+2022-01-08 13:17:37.569 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-08 13:17:37.570 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-01-08 13:17:37.588 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.springboot.springbootdemo.dao.es.EsBeanDao. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2022-01-08 13:17:37.589 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9ms. Found 0 Redis repository interfaces.
+2022-01-08 13:17:40.502 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-01-08 13:17:40.502 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-01-08 13:17:40.503 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-01-08 13:17:40.503 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-01-08 13:17:40.974 [main] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Broker not available; cannot force queue declarations during start: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: JPA metamodel must not be empty!
+2022-01-08 13:17:41.019 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
+2022-01-08 13:17:41.019 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
+2022-01-08 13:17:41.028 [main] INFO  c.s.springbootdemo.SpringbootdemoApplicationTests - Started SpringbootdemoApplicationTests in 21.996 seconds (JVM running for 23.37)
+2022-01-08 13:17:41.275 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2022-01-08 13:17:41.498 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2022-01-08 13:17:41.505 [main] DEBUG c.s.springbootdemo.dao.db1.UserDao.findByName - ==>  Preparing: select id,email,password,username from user where username=? 
+2022-01-08 13:17:41.532 [main] DEBUG c.s.springbootdemo.dao.db1.UserDao.findByName - ==> Parameters: 李青(String)
+2022-01-08 13:17:41.563 [main] DEBUG c.s.springbootdemo.dao.db1.UserDao.findByName - <==      Total: 1
+2022-01-08 13:17:41.695 [main] INFO  o.s.data.elasticsearch.support.VersionInfo - Version Spring Data Elasticsearch: 4.0.2.RELEASE
+2022-01-08 13:17:41.695 [main] INFO  o.s.data.elasticsearch.support.VersionInfo - Version Elasticsearch Client in build: 7.6.2
+2022-01-08 13:17:41.696 [main] INFO  o.s.data.elasticsearch.support.VersionInfo - Version Elasticsearch Client used: 7.6.2
+2022-01-08 13:17:42.927 [main] WARN  o.s.d.e.r.support.AbstractElasticsearchRepository - Cannot create index: Timeout connecting to [localhost/127.0.0.1:9200]; nested exception is java.lang.RuntimeException: Timeout connecting to [localhost/127.0.0.1:9200]
+2022-01-08 13:17:44.037 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-01-08 13:17:44.229 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2022-01-08 13:17:44.478 [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-01-08 13:17:45.842 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2022-01-08 13:17:45.926 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#34eaf9c1:0/SimpleConnection@27a0e6ce [delegate=amqp://guest@127.0.0.1:5672/, localPort= 60214]
+2022-01-08 13:17:52.288 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Waiting for workers to finish.
+2022-01-08 13:17:53.107 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+2022-01-08 13:17:53.108 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Waiting for workers to finish.
+2022-01-08 13:17:54.120 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+2022-01-08 13:17:54.132 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-01-08 13:17:54.132 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Shutdown ignored - container is not active already
+2022-01-08 13:17:54.132 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Shutdown ignored - container is not active already
+2022-01-08 13:17:54.251 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2022-01-08 13:17:54.260 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2022-01-08 13:17:57.995 [main] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Broker not available; cannot force queue declarations during start: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: JPA metamodel must not be empty!
+2022-01-08 13:17:58.284 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
+2022-01-08 13:17:58.285 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
+2022-01-08 13:17:58.294 [main] INFO  c.s.springbootdemo.SpringbootdemoApplicationTests - Started SpringbootdemoApplicationTests in 22.465 seconds (JVM running for 23.843)
+2022-01-08 13:17:59.775 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Waiting for workers to finish.
+2022-01-08 13:18:00.288 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+2022-01-08 13:18:00.289 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Waiting for workers to finish.
+2022-01-08 13:18:00.302 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+2022-01-08 13:18:00.313 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-01-08 13:18:00.313 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Shutdown ignored - container is not active already
+2022-01-08 13:18:00.313 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Shutdown ignored - container is not active already
+2022-01-08 13:19:52.106 [main] INFO  c.s.springbootdemo.SpringbootdemoApplicationTests - Starting SpringbootdemoApplicationTests on Jiang with PID 15580 (started by Administrator in F:\workspace\java\SpringBootWorkSpace)
+2022-01-08 13:19:52.107 [main] INFO  c.s.springbootdemo.SpringbootdemoApplicationTests - No active profile set, falling back to default profiles: default
+2022-01-08 13:19:52.786 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userDao' and 'com.springboot.springbootdemo.dao.db1.UserDao' mapperInterface. Bean already defined with the same name!
+2022-01-08 13:19:52.787 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'departmentDao' and 'com.springboot.springbootdemo.dao.db2.DepartmentDao' mapperInterface. Bean already defined with the same name!
+2022-01-08 13:19:53.008 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-08 13:19:53.011 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-01-08 13:19:53.228 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 212ms. Found 1 Elasticsearch repository interfaces.
+2022-01-08 13:19:53.235 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-08 13:19:53.235 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2022-01-08 13:19:53.245 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10ms. Found 0 Reactive Elasticsearch repository interfaces.
+2022-01-08 13:19:53.256 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-08 13:19:53.257 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2022-01-08 13:19:53.278 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.springboot.springbootdemo.dao.es.EsBeanDao. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2022-01-08 13:19:53.281 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18ms. Found 0 JPA repository interfaces.
+2022-01-08 13:19:53.300 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-08 13:19:53.302 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-01-08 13:19:53.320 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.springboot.springbootdemo.dao.es.EsBeanDao. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2022-01-08 13:19:53.321 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9ms. Found 0 Redis repository interfaces.
+2022-01-08 13:19:56.275 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-01-08 13:19:56.275 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-01-08 13:19:56.275 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-01-08 13:19:56.276 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-01-08 13:19:57.447 [main] INFO  o.s.data.elasticsearch.support.VersionInfo - Version Spring Data Elasticsearch: 4.0.2.RELEASE
+2022-01-08 13:19:57.447 [main] INFO  o.s.data.elasticsearch.support.VersionInfo - Version Elasticsearch Client in build: 7.6.2
+2022-01-08 13:19:57.447 [main] INFO  o.s.data.elasticsearch.support.VersionInfo - Version Elasticsearch Client used: 7.6.2
+2022-01-08 13:19:58.665 [main] WARN  o.s.d.e.r.support.AbstractElasticsearchRepository - Cannot create index: Timeout connecting to [localhost/127.0.0.1:9200]; nested exception is java.lang.RuntimeException: Timeout connecting to [localhost/127.0.0.1:9200]
+2022-01-08 13:19:59.766 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-01-08 13:19:59.966 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2022-01-08 13:20:00.211 [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-01-08 13:20:01.313 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2022-01-08 13:20:01.414 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#5c79c5ec:0/SimpleConnection@13662609 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 60537]
+2022-01-08 13:20:13.470 [main] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Broker not available; cannot force queue declarations during start: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: JPA metamodel must not be empty!
+2022-01-08 13:20:13.638 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
+2022-01-08 13:20:13.638 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
+2022-01-08 13:20:13.646 [main] INFO  c.s.springbootdemo.SpringbootdemoApplicationTests - Started SpringbootdemoApplicationTests in 22.062 seconds (JVM running for 23.417)
+2022-01-08 13:20:14.927 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Waiting for workers to finish.
+2022-01-08 13:20:15.660 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+2022-01-08 13:20:15.661 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Waiting for workers to finish.
+2022-01-08 13:20:16.670 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+2022-01-08 13:20:16.681 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-01-08 13:20:16.681 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Shutdown ignored - container is not active already
+2022-01-08 13:20:16.681 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Shutdown ignored - container is not active already
+2022-01-08 19:44:27.795 [main] INFO  c.s.springbootdemo.SpringbootdemoApplicationTests - Starting SpringbootdemoApplicationTests on Jiang with PID 14308 (started by Administrator in F:\workspace\java\SpringBootWorkSpace)
+2022-01-08 19:44:27.797 [main] INFO  c.s.springbootdemo.SpringbootdemoApplicationTests - No active profile set, falling back to default profiles: default
+2022-01-08 19:44:28.488 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userDao' and 'com.springboot.springbootdemo.dao.db1.UserDao' mapperInterface. Bean already defined with the same name!
+2022-01-08 19:44:28.488 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'departmentDao' and 'com.springboot.springbootdemo.dao.db2.DepartmentDao' mapperInterface. Bean already defined with the same name!
+2022-01-08 19:44:28.694 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-08 19:44:28.697 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-01-08 19:44:28.912 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 209ms. Found 1 Elasticsearch repository interfaces.
+2022-01-08 19:44:28.918 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-08 19:44:28.918 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2022-01-08 19:44:28.929 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10ms. Found 0 Reactive Elasticsearch repository interfaces.
+2022-01-08 19:44:28.940 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-08 19:44:28.941 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2022-01-08 19:44:28.956 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.springboot.springbootdemo.dao.es.EsBeanDao. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2022-01-08 19:44:28.958 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13ms. Found 0 JPA repository interfaces.
+2022-01-08 19:44:28.979 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-08 19:44:28.981 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-01-08 19:44:28.999 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.springboot.springbootdemo.dao.es.EsBeanDao. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2022-01-08 19:44:28.999 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8ms. Found 0 Redis repository interfaces.
+2022-01-08 19:44:31.927 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-01-08 19:44:31.929 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-01-08 19:44:31.929 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-01-08 19:44:31.929 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-01-08 19:44:33.077 [main] INFO  o.s.data.elasticsearch.support.VersionInfo - Version Spring Data Elasticsearch: 4.0.2.RELEASE
+2022-01-08 19:44:33.078 [main] INFO  o.s.data.elasticsearch.support.VersionInfo - Version Elasticsearch Client in build: 7.6.2
+2022-01-08 19:44:33.078 [main] INFO  o.s.data.elasticsearch.support.VersionInfo - Version Elasticsearch Client used: 7.6.2
+2022-01-08 19:44:34.251 [main] WARN  o.s.d.e.r.support.AbstractElasticsearchRepository - Cannot create index: Timeout connecting to [localhost/127.0.0.1:9200]; nested exception is java.lang.RuntimeException: Timeout connecting to [localhost/127.0.0.1:9200]
+2022-01-08 19:44:35.351 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-01-08 19:44:35.572 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2022-01-08 19:44:36.933 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2022-01-08 19:44:37.061 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#55881f40:0/SimpleConnection@27a0e6ce [delegate=amqp://guest@127.0.0.1:5672/, localPort= 65195]
+2022-01-08 19:44:49.119 [main] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Broker not available; cannot force queue declarations during start: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: JPA metamodel must not be empty!
+2022-01-08 19:44:49.167 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
+2022-01-08 19:44:49.168 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
+2022-01-08 19:44:49.177 [main] INFO  c.s.springbootdemo.SpringbootdemoApplicationTests - Started SpringbootdemoApplicationTests in 21.908 seconds (JVM running for 23.252)
+2022-01-08 19:44:49.646 [main] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][main] Exception processing template "mail": Error resolving template [mail], template might not exist or might not be accessible by any of the configured Template Resolvers
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [mail], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1059)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1048)
+	at com.springboot.springbootdemo.SpringbootdemoApplicationTests.sendmailtemp(SpringbootdemoApplicationTests.java:183)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:686)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor$$Lambda$100/523691575.apply(Unknown Source)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall$$Lambda$101/1857815974.apply(Unknown Source)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker$$Lambda$319/368342628.apply(Unknown Source)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:212)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor$$Lambda$1378/600858818.execute(Unknown Source)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:208)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:137)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:71)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask$$Lambda$184/1330754528.execute(Unknown Source)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask$$Lambda$183/508198356.invoke(Unknown Source)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask$$Lambda$182/1765250898.execute(Unknown Source)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService$$Lambda$188/480971771.accept(Unknown Source)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask$$Lambda$184/1330754528.execute(Unknown Source)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask$$Lambda$183/508198356.invoke(Unknown Source)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask$$Lambda$182/1765250898.execute(Unknown Source)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService$$Lambda$188/480971771.accept(Unknown Source)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask$$Lambda$184/1330754528.execute(Unknown Source)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask$$Lambda$183/508198356.invoke(Unknown Source)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask$$Lambda$182/1765250898.execute(Unknown Source)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:248)
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$5(DefaultLauncher.java:211)
+	at org.junit.platform.launcher.core.DefaultLauncher$$Lambda$154/249155636.accept(Unknown Source)
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:226)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:199)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:132)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:74)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+2022-01-08 19:44:49.700 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Waiting for workers to finish.
+2022-01-08 19:44:50.176 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+2022-01-08 19:44:50.177 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Waiting for workers to finish.
+2022-01-08 19:44:51.181 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+2022-01-08 19:44:51.193 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-01-08 19:44:51.193 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Shutdown ignored - container is not active already
+2022-01-08 19:44:51.193 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Shutdown ignored - container is not active already
+2022-01-08 19:45:20.893 [main] INFO  c.s.springbootdemo.SpringbootdemoApplicationTests - Starting SpringbootdemoApplicationTests on Jiang with PID 5800 (started by Administrator in F:\workspace\java\SpringBootWorkSpace)
+2022-01-08 19:45:20.894 [main] INFO  c.s.springbootdemo.SpringbootdemoApplicationTests - No active profile set, falling back to default profiles: default
+2022-01-08 19:45:21.651 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userDao' and 'com.springboot.springbootdemo.dao.db1.UserDao' mapperInterface. Bean already defined with the same name!
+2022-01-08 19:45:21.651 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'departmentDao' and 'com.springboot.springbootdemo.dao.db2.DepartmentDao' mapperInterface. Bean already defined with the same name!
+2022-01-08 19:45:21.869 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-08 19:45:21.872 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-01-08 19:45:22.087 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 209ms. Found 1 Elasticsearch repository interfaces.
+2022-01-08 19:45:22.093 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-08 19:45:22.094 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2022-01-08 19:45:22.103 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9ms. Found 0 Reactive Elasticsearch repository interfaces.
+2022-01-08 19:45:22.115 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-08 19:45:22.116 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2022-01-08 19:45:22.132 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.springboot.springbootdemo.dao.es.EsBeanDao. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2022-01-08 19:45:22.134 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13ms. Found 0 JPA repository interfaces.
+2022-01-08 19:45:22.155 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-08 19:45:22.157 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-01-08 19:45:22.175 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.springboot.springbootdemo.dao.es.EsBeanDao. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2022-01-08 19:45:22.175 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8ms. Found 0 Redis repository interfaces.
+2022-01-08 19:45:24.980 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-01-08 19:45:24.981 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-01-08 19:45:24.982 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-01-08 19:45:24.982 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-01-08 19:45:26.169 [main] INFO  o.s.data.elasticsearch.support.VersionInfo - Version Spring Data Elasticsearch: 4.0.2.RELEASE
+2022-01-08 19:45:26.170 [main] INFO  o.s.data.elasticsearch.support.VersionInfo - Version Elasticsearch Client in build: 7.6.2
+2022-01-08 19:45:26.170 [main] INFO  o.s.data.elasticsearch.support.VersionInfo - Version Elasticsearch Client used: 7.6.2
+2022-01-08 19:45:27.338 [main] WARN  o.s.d.e.r.support.AbstractElasticsearchRepository - Cannot create index: Timeout connecting to [localhost/127.0.0.1:9200]; nested exception is java.lang.RuntimeException: Timeout connecting to [localhost/127.0.0.1:9200]
+2022-01-08 19:45:28.410 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-01-08 19:45:28.600 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2022-01-08 19:45:29.976 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2022-01-08 19:45:30.097 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#5bbf744b:0/SimpleConnection@13662609 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 65304]
+2022-01-08 19:45:42.171 [main] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Broker not available; cannot force queue declarations during start: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: JPA metamodel must not be empty!
+2022-01-08 19:45:42.214 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
+2022-01-08 19:45:42.214 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
+2022-01-08 19:45:42.224 [main] INFO  c.s.springbootdemo.SpringbootdemoApplicationTests - Started SpringbootdemoApplicationTests in 21.891 seconds (JVM running for 23.277)
+2022-01-08 19:45:42.613 [main] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][main] Exception processing template "mail": Error resolving template [mail], template might not exist or might not be accessible by any of the configured Template Resolvers
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [mail], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1059)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1048)
+	at com.springboot.springbootdemo.SpringbootdemoApplicationTests.sendmailtemp(SpringbootdemoApplicationTests.java:183)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:686)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor$$Lambda$100/523691575.apply(Unknown Source)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall$$Lambda$101/1857815974.apply(Unknown Source)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker$$Lambda$319/368342628.apply(Unknown Source)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:212)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor$$Lambda$1378/878238390.execute(Unknown Source)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:208)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:137)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:71)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask$$Lambda$184/1330754528.execute(Unknown Source)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask$$Lambda$183/508198356.invoke(Unknown Source)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask$$Lambda$182/1765250898.execute(Unknown Source)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService$$Lambda$188/480971771.accept(Unknown Source)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask$$Lambda$184/1330754528.execute(Unknown Source)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask$$Lambda$183/508198356.invoke(Unknown Source)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask$$Lambda$182/1765250898.execute(Unknown Source)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService$$Lambda$188/480971771.accept(Unknown Source)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask$$Lambda$184/1330754528.execute(Unknown Source)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask$$Lambda$183/508198356.invoke(Unknown Source)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask$$Lambda$182/1765250898.execute(Unknown Source)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:248)
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$5(DefaultLauncher.java:211)
+	at org.junit.platform.launcher.core.DefaultLauncher$$Lambda$154/249155636.accept(Unknown Source)
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:226)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:199)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:132)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:74)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+2022-01-08 19:45:42.642 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Waiting for workers to finish.
+2022-01-08 19:45:43.222 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+2022-01-08 19:45:43.223 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Waiting for workers to finish.
+2022-01-08 19:45:44.230 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+2022-01-08 19:45:44.241 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-01-08 19:45:44.242 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Shutdown ignored - container is not active already
+2022-01-08 19:45:44.242 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Shutdown ignored - container is not active already
+2022-01-08 19:46:18.177 [main] INFO  c.s.springbootdemo.SpringbootdemoApplicationTests - Starting SpringbootdemoApplicationTests on Jiang with PID 12156 (started by Administrator in F:\workspace\java\SpringBootWorkSpace)
+2022-01-08 19:46:18.178 [main] INFO  c.s.springbootdemo.SpringbootdemoApplicationTests - No active profile set, falling back to default profiles: default
+2022-01-08 19:46:18.809 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userDao' and 'com.springboot.springbootdemo.dao.db1.UserDao' mapperInterface. Bean already defined with the same name!
+2022-01-08 19:46:18.809 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'departmentDao' and 'com.springboot.springbootdemo.dao.db2.DepartmentDao' mapperInterface. Bean already defined with the same name!
+2022-01-08 19:46:19.045 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-08 19:46:19.047 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-01-08 19:46:19.273 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 220ms. Found 1 Elasticsearch repository interfaces.
+2022-01-08 19:46:19.280 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-08 19:46:19.280 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2022-01-08 19:46:19.290 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9ms. Found 0 Reactive Elasticsearch repository interfaces.
+2022-01-08 19:46:19.300 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-08 19:46:19.302 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2022-01-08 19:46:19.316 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.springboot.springbootdemo.dao.es.EsBeanDao. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2022-01-08 19:46:19.318 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12ms. Found 0 JPA repository interfaces.
+2022-01-08 19:46:19.341 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-08 19:46:19.343 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-01-08 19:46:19.361 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.springboot.springbootdemo.dao.es.EsBeanDao. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2022-01-08 19:46:19.361 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9ms. Found 0 Redis repository interfaces.
+2022-01-08 19:46:22.176 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-01-08 19:46:22.177 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-01-08 19:46:22.178 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-01-08 19:46:22.178 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-01-08 19:46:23.374 [main] INFO  o.s.data.elasticsearch.support.VersionInfo - Version Spring Data Elasticsearch: 4.0.2.RELEASE
+2022-01-08 19:46:23.374 [main] INFO  o.s.data.elasticsearch.support.VersionInfo - Version Elasticsearch Client in build: 7.6.2
+2022-01-08 19:46:23.374 [main] INFO  o.s.data.elasticsearch.support.VersionInfo - Version Elasticsearch Client used: 7.6.2
+2022-01-08 19:46:24.582 [main] WARN  o.s.d.e.r.support.AbstractElasticsearchRepository - Cannot create index: Timeout connecting to [localhost/127.0.0.1:9200]; nested exception is java.lang.RuntimeException: Timeout connecting to [localhost/127.0.0.1:9200]
+2022-01-08 19:46:25.670 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-01-08 19:46:25.877 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2022-01-08 19:46:27.407 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2022-01-08 19:46:27.556 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#55881f40:0/SimpleConnection@27a0e6ce [delegate=amqp://guest@127.0.0.1:5672/, localPort= 65418]
+2022-01-08 19:46:39.595 [main] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Broker not available; cannot force queue declarations during start: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: JPA metamodel must not be empty!
+2022-01-08 19:46:39.638 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
+2022-01-08 19:46:39.639 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
+2022-01-08 19:46:39.649 [main] INFO  c.s.springbootdemo.SpringbootdemoApplicationTests - Started SpringbootdemoApplicationTests in 21.986 seconds (JVM running for 23.37)
+2022-01-08 19:46:41.276 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Waiting for workers to finish.
+2022-01-08 19:46:41.647 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+2022-01-08 19:46:41.648 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Waiting for workers to finish.
+2022-01-08 19:46:41.660 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+2022-01-08 19:46:41.671 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-01-08 19:46:41.671 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Shutdown ignored - container is not active already
+2022-01-08 19:46:41.672 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Shutdown ignored - container is not active already
+2022-01-08 20:25:50.830 [main] INFO  c.s.springbootdemo.SpringbootdemoApplicationTests - Starting SpringbootdemoApplicationTests on Jiang with PID 15884 (started by Administrator in F:\workspace\java\SpringBootWorkSpace)
+2022-01-08 20:25:50.831 [main] INFO  c.s.springbootdemo.SpringbootdemoApplicationTests - No active profile set, falling back to default profiles: default
+2022-01-08 20:25:51.498 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userDao' and 'com.springboot.springbootdemo.dao.db1.UserDao' mapperInterface. Bean already defined with the same name!
+2022-01-08 20:25:51.498 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'departmentDao' and 'com.springboot.springbootdemo.dao.db2.DepartmentDao' mapperInterface. Bean already defined with the same name!
+2022-01-08 20:25:51.706 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-08 20:25:51.709 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-01-08 20:25:51.924 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 209ms. Found 1 Elasticsearch repository interfaces.
+2022-01-08 20:25:51.930 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-08 20:25:51.931 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2022-01-08 20:25:51.941 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9ms. Found 0 Reactive Elasticsearch repository interfaces.
+2022-01-08 20:25:51.951 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-08 20:25:51.953 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2022-01-08 20:25:51.968 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.springboot.springbootdemo.dao.es.EsBeanDao. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2022-01-08 20:25:51.970 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13ms. Found 0 JPA repository interfaces.
+2022-01-08 20:25:51.989 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-08 20:25:51.991 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-01-08 20:25:52.009 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.springboot.springbootdemo.dao.es.EsBeanDao. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2022-01-08 20:25:52.009 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9ms. Found 0 Redis repository interfaces.
+2022-01-08 20:25:54.966 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-01-08 20:25:54.967 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-01-08 20:25:54.967 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-01-08 20:25:54.968 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-01-08 20:25:57.131 [main] INFO  o.s.data.elasticsearch.support.VersionInfo - Version Spring Data Elasticsearch: 4.0.2.RELEASE
+2022-01-08 20:25:57.131 [main] INFO  o.s.data.elasticsearch.support.VersionInfo - Version Elasticsearch Client in build: 7.6.2
+2022-01-08 20:25:57.131 [main] INFO  o.s.data.elasticsearch.support.VersionInfo - Version Elasticsearch Client used: 7.6.2
+2022-01-08 20:25:58.337 [main] WARN  o.s.d.e.r.support.AbstractElasticsearchRepository - Cannot create index: Timeout connecting to [localhost/127.0.0.1:9200]; nested exception is java.lang.RuntimeException: Timeout connecting to [localhost/127.0.0.1:9200]
+2022-01-08 20:25:59.376 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-01-08 20:25:59.599 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2022-01-08 20:26:01.036 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2022-01-08 20:26:01.129 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#55881f40:0/SimpleConnection@27a0e6ce [delegate=amqp://guest@127.0.0.1:5672/, localPort= 54899]
+2022-01-08 20:26:13.168 [main] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Broker not available; cannot force queue declarations during start: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: JPA metamodel must not be empty!
+2022-01-08 20:26:13.214 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
+2022-01-08 20:26:13.215 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
+2022-01-08 20:26:13.224 [main] INFO  c.s.springbootdemo.SpringbootdemoApplicationTests - Started SpringbootdemoApplicationTests in 22.935 seconds (JVM running for 24.388)
+2022-01-08 20:26:13.572 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Waiting for workers to finish.
+2022-01-08 20:26:14.220 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+2022-01-08 20:26:14.221 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Waiting for workers to finish.
+2022-01-08 20:26:15.226 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+2022-01-08 20:26:15.238 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-01-08 20:26:15.238 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Shutdown ignored - container is not active already
+2022-01-08 20:26:15.238 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Shutdown ignored - container is not active already
+2022-01-08 20:28:23.486 [main] INFO  c.s.springbootdemo.SpringbootdemoApplicationTests - Starting SpringbootdemoApplicationTests on Jiang with PID 13600 (started by Administrator in F:\workspace\java\SpringBootWorkSpace)
+2022-01-08 20:28:23.487 [main] INFO  c.s.springbootdemo.SpringbootdemoApplicationTests - No active profile set, falling back to default profiles: default
+2022-01-08 20:28:24.154 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userDao' and 'com.springboot.springbootdemo.dao.db1.UserDao' mapperInterface. Bean already defined with the same name!
+2022-01-08 20:28:24.154 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'departmentDao' and 'com.springboot.springbootdemo.dao.db2.DepartmentDao' mapperInterface. Bean already defined with the same name!
+2022-01-08 20:28:24.385 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-08 20:28:24.387 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-01-08 20:28:24.612 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 218ms. Found 1 Elasticsearch repository interfaces.
+2022-01-08 20:28:24.618 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-08 20:28:24.619 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2022-01-08 20:28:24.628 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9ms. Found 0 Reactive Elasticsearch repository interfaces.
+2022-01-08 20:28:24.638 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-08 20:28:24.640 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2022-01-08 20:28:24.655 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.springboot.springbootdemo.dao.es.EsBeanDao. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2022-01-08 20:28:24.657 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13ms. Found 0 JPA repository interfaces.
+2022-01-08 20:28:24.681 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-08 20:28:24.682 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-01-08 20:28:24.700 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.springboot.springbootdemo.dao.es.EsBeanDao. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2022-01-08 20:28:24.700 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9ms. Found 0 Redis repository interfaces.
+2022-01-08 20:28:27.531 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-01-08 20:28:27.532 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-01-08 20:28:27.532 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-01-08 20:28:27.532 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-01-08 20:28:28.728 [main] INFO  o.s.data.elasticsearch.support.VersionInfo - Version Spring Data Elasticsearch: 4.0.2.RELEASE
+2022-01-08 20:28:28.728 [main] INFO  o.s.data.elasticsearch.support.VersionInfo - Version Elasticsearch Client in build: 7.6.2
+2022-01-08 20:28:28.728 [main] INFO  o.s.data.elasticsearch.support.VersionInfo - Version Elasticsearch Client used: 7.6.2
+2022-01-08 20:28:29.917 [main] WARN  o.s.d.e.r.support.AbstractElasticsearchRepository - Cannot create index: Timeout connecting to [localhost/127.0.0.1:9200]; nested exception is java.lang.RuntimeException: Timeout connecting to [localhost/127.0.0.1:9200]
+2022-01-08 20:28:31.012 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-01-08 20:28:31.222 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2022-01-08 20:28:32.639 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2022-01-08 20:28:32.740 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#55881f40:0/SimpleConnection@27a0e6ce [delegate=amqp://guest@127.0.0.1:5672/, localPort= 55192]
+2022-01-08 20:28:44.803 [main] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Broker not available; cannot force queue declarations during start: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: JPA metamodel must not be empty!
+2022-01-08 20:28:44.989 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
+2022-01-08 20:28:44.989 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
+2022-01-08 20:28:45.001 [main] INFO  c.s.springbootdemo.SpringbootdemoApplicationTests - Started SpringbootdemoApplicationTests in 22.036 seconds (JVM running for 23.385)
+2022-01-08 20:28:46.420 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Waiting for workers to finish.
+2022-01-08 20:28:47.015 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+2022-01-08 20:28:47.017 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Waiting for workers to finish.
+2022-01-08 20:28:48.020 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+2022-01-08 20:28:48.032 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-01-08 20:28:48.032 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Shutdown ignored - container is not active already
+2022-01-08 20:28:48.032 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Shutdown ignored - container is not active already
+2022-01-08 20:31:24.480 [main] INFO  c.s.springbootdemo.SpringbootdemoApplicationTests - Starting SpringbootdemoApplicationTests on Jiang with PID 17168 (started by Administrator in F:\workspace\java\SpringBootWorkSpace)
+2022-01-08 20:31:24.482 [main] INFO  c.s.springbootdemo.SpringbootdemoApplicationTests - No active profile set, falling back to default profiles: default
+2022-01-08 20:31:25.117 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userDao' and 'com.springboot.springbootdemo.dao.db1.UserDao' mapperInterface. Bean already defined with the same name!
+2022-01-08 20:31:25.117 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'departmentDao' and 'com.springboot.springbootdemo.dao.db2.DepartmentDao' mapperInterface. Bean already defined with the same name!
+2022-01-08 20:31:25.348 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-08 20:31:25.350 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-01-08 20:31:25.570 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 214ms. Found 1 Elasticsearch repository interfaces.
+2022-01-08 20:31:25.577 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-08 20:31:25.577 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2022-01-08 20:31:25.587 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9ms. Found 0 Reactive Elasticsearch repository interfaces.
+2022-01-08 20:31:25.598 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-08 20:31:25.599 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2022-01-08 20:31:25.615 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.springboot.springbootdemo.dao.es.EsBeanDao. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2022-01-08 20:31:25.617 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13ms. Found 0 JPA repository interfaces.
+2022-01-08 20:31:25.636 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-08 20:31:25.638 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-01-08 20:31:25.655 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.springboot.springbootdemo.dao.es.EsBeanDao. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2022-01-08 20:31:25.656 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8ms. Found 0 Redis repository interfaces.
+2022-01-08 20:31:28.527 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-01-08 20:31:28.527 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-01-08 20:31:28.527 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-01-08 20:31:28.527 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-01-08 20:31:29.693 [main] INFO  o.s.data.elasticsearch.support.VersionInfo - Version Spring Data Elasticsearch: 4.0.2.RELEASE
+2022-01-08 20:31:29.694 [main] INFO  o.s.data.elasticsearch.support.VersionInfo - Version Elasticsearch Client in build: 7.6.2
+2022-01-08 20:31:29.694 [main] INFO  o.s.data.elasticsearch.support.VersionInfo - Version Elasticsearch Client used: 7.6.2
+2022-01-08 20:31:30.881 [main] WARN  o.s.d.e.r.support.AbstractElasticsearchRepository - Cannot create index: Timeout connecting to [localhost/127.0.0.1:9200]; nested exception is java.lang.RuntimeException: Timeout connecting to [localhost/127.0.0.1:9200]
+2022-01-08 20:31:31.963 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-01-08 20:31:32.165 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2022-01-08 20:31:33.543 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2022-01-08 20:31:33.635 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#55881f40:0/SimpleConnection@27a0e6ce [delegate=amqp://guest@127.0.0.1:5672/, localPort= 55501]
+2022-01-08 20:31:45.701 [main] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Broker not available; cannot force queue declarations during start: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: JPA metamodel must not be empty!
+2022-01-08 20:31:45.745 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
+2022-01-08 20:31:45.745 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
+2022-01-08 20:31:45.755 [main] INFO  c.s.springbootdemo.SpringbootdemoApplicationTests - Started SpringbootdemoApplicationTests in 21.799 seconds (JVM running for 23.204)
+2022-01-08 20:31:47.844 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Waiting for workers to finish.
+2022-01-08 20:31:48.770 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+2022-01-08 20:31:48.771 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Waiting for workers to finish.
+2022-01-08 20:31:49.771 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+2022-01-08 20:31:49.795 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-01-08 20:31:49.796 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Shutdown ignored - container is not active already
+2022-01-08 20:31:49.796 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Shutdown ignored - container is not active already

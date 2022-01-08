@@ -111,10 +111,15 @@ spring:
   mail:
     #    邮箱账号
     username: 1152095329@qq.com
-    #    邮箱密码，可以是授权码
-    password: jyt19930905
+    #    邮箱客户端授权码
+    password: ubskbzeydlaljihf
     #    邮箱服务器地址
     host: smtp.qq.com
+    properties:
+      mail:
+        smtp:
+          ssl:
+            enable: true
 mybatis:
   configuration:
     #开启驼峰命名匹配规则

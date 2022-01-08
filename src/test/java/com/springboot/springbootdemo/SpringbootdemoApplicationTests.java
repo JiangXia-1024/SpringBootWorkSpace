@@ -2,6 +2,7 @@ package com.springboot.springbootdemo;
 
 import com.springboot.springbootdemo.bean.Department;
 import com.springboot.springbootdemo.bean.User;
+import com.springboot.springbootdemo.config.mailconfig.MailConfig;
 import com.springboot.springbootdemo.service.UserService;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
@@ -11,12 +12,24 @@ import org.springframework.amqp.core.DirectExchange;
 import org.springframework.amqp.core.Queue;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.mail.MailProperties;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.StringRedisTemplate;
+import org.springframework.mail.SimpleMailMessage;
+import org.springframework.mail.javamail.JavaMailSenderImpl;
+import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.messaging.MessageHeaders;
 
+import org.thymeleaf.TemplateEngine;
+import org.thymeleaf.context.Context;
+
+import javax.mail.MessagingException;
+import javax.mail.internet.MimeMessage;
+import java.io.File;
 import java.util.Arrays;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -41,6 +54,15 @@ class SpringbootdemoApplicationTests {
     //AMqpAdmin：RabbitMQ系统的管理功能组件：创建和删除queue、exchange、Binding
     @Autowired
     AmqpAdmin amqpAdmin;
+
+    @Autowired
+    JavaMailSenderImpl javaMailSender;
+
+    @Autowired
+    TemplateEngine templateEngine;
+
+    @Autowired
+    MailProperties mailProperties;
 
     @Test
     void contextLoads() {
@@ -131,6 +153,43 @@ class SpringbootdemoApplicationTests {
         amqpAdmin.declareQueue(new Queue("amqpadmin.queue",true));
         System.out.println("创建绑定");
         amqpAdmin.declareBinding(new Binding("amqpadmin.queue",Binding.DestinationType.QUEUE,"amqpadmin.exchange","amqpadmin.haha",null));
+    }
 
+    @Test
+    public void sendmailtest(){
+        SimpleMailMessage mailMessage = new SimpleMailMessage();
+        mailMessage.setSubject("测试springboot发送邮件");//主题
+        mailMessage.setText("这是springboot发送邮件的内容，你看看怎么样呢？是不是成功了？");//内容
+        mailMessage.setTo("17621607346@163.com");
+        mailMessage.setFrom("1152095329@qq.com");
+        javaMailSender.send(mailMessage);
+
+    }
+
+    @Test
+    public void sendmailtemp() throws MessagingException {
+        //复杂邮件
+        MimeMessage msg = javaMailSender.createMimeMessage();
+        MimeMessageHelper helper = new MimeMessageHelper(msg,true);
+        try {
+            helper.setTo("17621607346@163.com");
+            helper.setFrom("1152095329@qq.com");
+            helper.setSubject("入职欢迎");
+            helper.setSentDate(new Date());
+            //附件
+            helper.addAttachment("配置说明.docx", new File("C:/Users/Administrator/Desktop/配置说明.docx"));
+            Context context = new Context();
+            context.setVariable("name", "江夏");
+            context.setVariable("posName", "java开发工程师");
+            context.setVariable("joblevelName", "高级工程师");
+            context.setVariable("departmentName", "研发部");
+            String mail = templateEngine.process("mailtemp", context);
+            helper.setText(mail, true);
+            javaMailSender.send(msg);
+            System.out.println(System.currentTimeMillis() + ":邮件发送成功");
+        } catch (MessagingException e) {
+            e.printStackTrace();
+            System.out.println(System.currentTimeMillis() + ":邮件发送失败"+ e.getMessage());
+        }
     }
 }
